@@ -80,8 +80,8 @@ let gameCounter = 100
 
 let x = 3;
 const y = x++;
-console.table([x, y]); // postfix first print then change
+// console.table([x, y]); // postfix first print then change
 
 let x2 = 3;
 const y2 = ++x2;
-console.table([x2, y2]); // prefix first change then print
+// console.table([x2, y2]); // prefix first change then print
