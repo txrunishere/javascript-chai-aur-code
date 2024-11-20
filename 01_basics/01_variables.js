@@ -16,3 +16,4 @@ accCity = "Delhi";
  */
 
 console.table([accId, accEmail, accPassword, accCity]);
+
