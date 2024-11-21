@@ -45,3 +45,35 @@ const myFunction = function(){
 
 
 // Fro Study all types in Detail ===> https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// # MEMORY
+// Stack (Primitive), Heap (Non-Primitive)
+
+
+// Example of Stack MEMORY
+let myName = "Tarun";
+let anotherName = myName; // ==> It Gives me output Tarun
+
+anotherName = "Deepak"; // Here it repalce the value of anotherName
+
+console.log(myName); // ==> Output: Tarun
+console.log(anotherName); // ==> Output: Deepak
+
+
+// Example of Heap MEMORY
+let userOne = {
+    name: "Tarun",
+    age: 17
+}
+
+let userTwo = userOne
+
+// If i change the name in userTwo
+userOne.name = "Deepak";
+// So, here it changes in both userOne and userTwo
+
+console.log(userOne);
+console.log(userTwo);
