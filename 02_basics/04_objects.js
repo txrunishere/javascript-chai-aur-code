@@ -58,3 +58,18 @@ const users = [
 
 // console.log(facebook.hasOwnProperty("id")); // returns a boolean value if exists
 
+
+// +-+-+-+-+-+-+-+-+-+-+-+-+-de-structure and JSON API+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+
+const myCourse = {
+    courseName: "Sigma",
+    price: 4999,
+    courseInstructor: "apnacollege"
+}
+
+// myCourse.courseName; // Normal way to get a object value
+
+const {courseName: cName} = myCourse // To extract the key value from a object
+console.log(cName); // access value like that
+
