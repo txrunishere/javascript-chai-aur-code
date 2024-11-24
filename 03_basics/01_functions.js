@@ -73,4 +73,4 @@ function returnRandomValue(array) {
     return array[rand]
 }
 
-console.log(returnRandomValue(myArray));  //returns the random value form the myArray
+// console.log(returnRandomValue(myArray));  //returns the random value form the myArray
