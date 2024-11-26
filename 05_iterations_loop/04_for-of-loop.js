@@ -22,21 +22,6 @@ for (const word of str) {
 
 //------------------------------------------------------------------------------------
 
-// for-in loop (use with objects)
-
-// const myObject = {
-//     tiger: "Sherrrr",
-//     goat: "bakri",
-//     bear: "bhaluu",
-//     cheetah: "cheetaaa"
-// }
-
-// for (const key in myObject) {
-//     // console.log(key);
-//     // console.log(myObject[key]);
-//     console.log(`Desi name of ${key} was ${myObject[key]}`);
-// }
-
 
 // -++-++-++-++-++-++-++-++-++-++- Map -++-++-++-++-++-++-++-++-++-++-
 
