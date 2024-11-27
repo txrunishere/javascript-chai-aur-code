@@ -62,3 +62,14 @@ tempList.forEach((val) => {
 
 const tempListItem = document.getElementsByClassName('list-item');
 Array.from(tempListItem);
+
+// we also apply multiple properties in a single query selector element. like.,
+
+const allList = document.querySelectorAll('li');
+
+allList.forEach((listItem) => {
+    listItem.style.backgroundColor = 'blue';
+    listItem.style.color = 'black';
+    listItem.style.padding = '10px';
+    listItem.innerText = 'List-Item';
+});
