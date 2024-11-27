@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <script>
+        const div = document.createElement('div'); // To create a element
+        div.className = 'container'; // gives class to the following element
+        div.id = 'myId'; // gives id to the following element
+        div.setAttribute('title', "heading"); // to set any attribute on an element like., input, name etc.
+        // div.innerText = "Hello World!!" // To set text inside the element
+
+        const addText = document.createTextNode("I am Text Node"); // proper way to add text inside element
+        div.appendChild(addText);
+
+        document.body.append(div); // to add div element in body of document
+
+        console.log(div);
+    </script>
+  </body>
+</html>
