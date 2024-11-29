@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body style="background-color: #212121; color: aliceblue">
+    <h2>Amazing image</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="photoshop"
+            src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="japan"
+            src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="river"
+            src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="owl"
+            src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="prayer"
+            src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <a style="color: aliceblue" href="https://google.com" id="google"
+            >Google</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // document.getElementById('owl').onclick = function () {
+    //     alert("I am Clicked");
+    // }      // Wrong way
+
+    // Correct Approach
+    // document.getElementById('owl').addEventListener("click", function (ev) {
+    //     // console.log(ev);
+    // }, false ) // false was a default value
+
+    // What we study in it
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+
+    // Interview related
+    // clientX, clientY, screenX, screenY, and other position related elements
+
+    // altKey, shiftKey, ctrlKey, keyCode, etc.,
+
+    // document.getElementById('images').addEventListener("click", function (ev) {
+    //     console.log("Images was clicked");
+    // }, false )
+
+    // document.getElementById('owl').addEventListener("click", function (ev) {
+    //     console.log("Owl was clicked");
+    //     ev.stopPropagation(); // After this function when we click on owl element it don't access the top element's listener on it
+    // }, false )
+    // If event propogation is false then it goes bottom to top and if it is true it goes top to bottom
+
+    // preventDefault()
+
+    // document.getElementById('google').addEventListener('click', function (ev) {
+    //     ev.preventDefault();
+    //     ev.stopPropagation();
+    //     console.log("Google was Clicked");
+    // }, false);
+
+    document.querySelector("#images").addEventListener("click", function (ev) {
+      // console.log(ev.target.parentNode); // To target/get the element
+      console.log(ev.target.tagName);
+      if (ev.target.tagName === 'IMG') {
+        console.log(ev.target.id);
+        const removeIt = ev.target.parentNode;
+        removeIt.remove();
+      }
+      // removeIt.parentNode.removeChild(removeIt);
+    });
+  </script>
+</html>
