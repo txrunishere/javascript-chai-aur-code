@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Await</title>
+  </head>
+  <body>
+    <h1>Learn Async Await</h1>
+    <button id="stop">Button</button>
+  </body>
+  <script>
+    // setTimeout
+
+    const timeFunc = function () {
+      console.log("Hello World");
+    };
+
+    const changeText = function () {
+      document.querySelector("h1").innerHTML = "Party Badal liya Salla..";
+    };
+
+    const change = setTimeout(changeText, 2000);
+
+    // clearTimeout(stopMe); // We want to give a reference in the clearTimeout method because there were many timeout functions in production stage
+
+    // Add timeout to button which stop the process of change Text
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(change);
+      console.log("STOPPPPPPP!!!!");
+    });
+  </script>
+</html>
