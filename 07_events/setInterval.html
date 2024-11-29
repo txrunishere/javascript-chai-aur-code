@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async</title>
+  </head>
+  <body>
+    <h1>Learn Async Await</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    
+    // setInterval
+    
+    // Make functional from which when we click stop process stops and when click start process starts
+
+    const intTime = function () {
+        console.log(Date.now ());
+    }
+
+    // const stopInterval = setInterval(intTime, 1000,);
+    let interval;
+    document.querySelector("#start").addEventListener("click", function () {
+        interval = setInterval(intTime, 1000,);
+    });
+
+
+    document.querySelector("#stop").addEventListener("click", function () {
+        clearInterval(interval);
+    });
+
+
+  </script>
+</html>
