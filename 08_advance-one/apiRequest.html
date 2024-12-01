@@ -10,21 +10,21 @@
   </body>
   <script>
     const requestUrl = 'https://api.github.com/users/txrunishere';
-    const xml = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
 
-    xml.open('GET', requestUrl);
+    xhr.open('GET', requestUrl);
 
-    xml.onreadystatechange = function () {
-      console.log(xml.readyState);
-      if (xml.readyState === 4) {
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4) {
         const data = JSON.parse(this.responseText) // It converts the string response to Object and parse this data to JSON Format
         console.log(typeof data);
         console.log(data.location);
       }
     }
 
-    xml.send();
-    // console.log(xml);
+    xhr.send();
+    // console.log(xhr);
 
   </script>
 </html>
