@@ -19,7 +19,9 @@
 
 ## 4 pillers of OOP
 
-- Abstraction: Abstraction focuses on hiding implementation details and showing only the essential features.
+## Abstraction: 
+
+- Defination: Abstraction focuses on hiding implementation details and showing only the essential features.
 
 - Implementation: JavaScript does not have built-in abstract classes, but you can simulate abstraction using base classes or interfaces-like patterns
 
@@ -52,7 +54,9 @@ const circle = new Circle(5);
 console.log(circle.calculateArea()); // 78.53981633974483
 ```
 
-- Encapsulation: Encapsulation in JavaScript is achieved by grouping related data and methods inside an object or class and controlling access to that data using public and private methods.
+## Encapsulation: 
+
+- Defination: Encapsulation in JavaScript is achieved by grouping related data and methods inside an object or class and controlling access to that data using public and private methods.
 
 - Implementation: Encapsulation can be enforced using classes and private fields (# in modern JavaScript).
 
@@ -80,7 +84,9 @@ console.log(person.getName()); // Alice
 // console.log(person.#name); // Error: Private field '#name' must be declared
 ```
 
-- Inheritance: Inheritance allows a class to acquire the properties and methods of another class.
+## Inheritance: 
+
+- Defination: Inheritance allows a class to acquire the properties and methods of another class.
 
 - Implementation: Use the extends keyword to create a subclass.
 
@@ -101,7 +107,9 @@ const dog = new Dog();
 console.log(dog.speak()); // Bark
 ```
 
-- Polymorphism: Polymorphism allows methods to behave differently based on the object that invokes them.
+## Polymorphism: 
+
+- Defination: Polymorphism allows methods to behave differently based on the object that invokes them.
 
 - Implementation: Achieved through method overriding in subclasses.
 
