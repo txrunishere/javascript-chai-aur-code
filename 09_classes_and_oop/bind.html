@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bind in JS</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <h1>Bind in Javascript</h1>
+    <button>Button</button>
+  </body>
+  <script>
+
+    class Bind {
+      constructor() {
+        this.name = "Tarun";
+        this.email = "tarun@gmail.com";
+
+        document
+          .querySelector("button")
+          .addEventListener("click", this.handleCLick.bind(this));
+      }
+
+      handleCLick(){
+        console.log("Button was CLicked");
+        console.log(this.email);
+        alert("Success");
+      }
+    }
+
+    const user = new Bind();
+    // console.log(user);
+
+  </script>
+</html>
