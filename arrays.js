@@ -358,6 +358,22 @@ const shifted = myFish.shift();
 
 
 
+// --> The unshift() method of Array instances adds the specified elements to the beginning of an array and returns the new length of the array.
+
+// unshift()
+// unshift(element1)
+// unshift(element1, element2)
+// unshift(element1, element2, /* …, */ elementN)
+
+const arrayUnshift = [1, 2, 3];
+
+console.log(arrayUnshift.unshift(4, 5));
+// Expected output: 5
+console.log(arrayUnshift);
+// Expected output: Array [4, 5, 1, 2, 3]
+
+
+
 
 // --> The slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
 
@@ -412,10 +428,26 @@ function isBiggerThan10(element, index, array) {
 
 const months = ['March', 'Jan', 'Feb', 'Dec'];
 months.sort();
-console.log(months);
+// console.log(months);
 // Expected output: Array ["Dec", "Feb", "Jan", "March"]
 
 const arraySort = [1, 30, 4, 21, 100000];
 arraySort.sort();
-console.log(arraySort);
+// console.log(arraySort);
 // Expected output: Array [1, 100000, 21, 30, 4]
+
+
+
+
+// --> The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+
+// splice(start)
+// splice(start, deleteCount)
+// splice(start, deleteCount, item1)
+// splice(start, deleteCount, item1, item2)
+// splice(start, deleteCount, item1, item2, /* …, */ itemN)
+
+const monthsSplice = ["Jan", "Feb", "March", "April", "May", "June"];
+
+// monthsSplice.splice(1, 2, "I am Here")
+// console.log(monthsSplice);
